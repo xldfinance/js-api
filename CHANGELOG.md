@@ -1,5 +1,11 @@
 # @xldfinance/js-api
 
+## 1.0.1
+
+### Patch Changes
+
+- 9fbf68e: - fix import paths in readme
+
 ## 1.0.0
 
 ### Major Changes
