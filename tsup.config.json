@@ -1,0 +1,9 @@
+{
+  "splitting": true,
+  "sourcemap": true,
+  "clean": true,
+  "minify": true,
+  "dts": true,
+  "entry": ["src/index.ts"],
+  "format": ["esm", "cjs"]
+}

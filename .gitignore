@@ -1,0 +1,7 @@
+# folders
+node_modules/
+dist/
+
+# files
+yarn-error.log
+lerna-debug.log

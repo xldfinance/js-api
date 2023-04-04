@@ -1,0 +1,36 @@
+{
+  "name": "@xld-sdk/js-api",
+  "version": "1.0.0",
+  "description": "XLD Javascript API SDK",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xldfinance/js-api"
+  },
+  "scripts": {
+    "ts:validate": "tsc --noEmit",
+    "format": "prettier  --ignore-path .gitignore --write .",
+    "build": "tsup",
+    "release": "npm run build && changeset publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "isomorphic-unfetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3"
+  }
+}
