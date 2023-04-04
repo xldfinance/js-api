@@ -1,6 +1,6 @@
 # XLD Javascript API SDK
 
-The **@xld-sdk/js-api** SDK provides an easier way to interacte with the XLD API using javascript/typescript.
+The **@xldfinance/js-api** SDK provides an easier way to interacte with the XLD API using javascript/typescript.
 
 ## Getting Started
 
@@ -8,10 +8,10 @@ Install using your favorite package manager:
 
 ```bash
 # Using NPM
-npm install "@xld-sdk/js-api"
+npm install "@xldfinance/js-api"
 
 # Or using yarn
-yarn add "@xld-sdk/js-api"
+yarn add "@xldfinance/js-api"
 ```
 
 **for usage in Node.js version < 18**, you will need to install the `isomorphic-unfetch` package.
@@ -21,7 +21,7 @@ yarn add "@xld-sdk/js-api"
 You can get started by importing the method you want to call in your project.
 
 ```ts
-import { getEstimate } from '@xld-js/api';
+import { getEstimate } from '@xldfinance/js-api';
 
 async function main() {
   try {
@@ -40,7 +40,7 @@ Example usage in react:
 
 ```tsx
 import { useState } from 'react';
-import { type Estimate, getEstimate } from '@xld-js/api';
+import { type Estimate, getEstimate } from '@xldfinance/js-api';
 
 type Status = 'idle' | 'pending' | 'resolved' | 'rejected';
 
@@ -92,7 +92,7 @@ export default function App() {
 By default the SDK is running in development environment. Once you're ready to move to production, you can set the environment to production using the config manager.
 
 ```ts
-import { getConfigManager } from '@xld-js/api';
+import { getConfigManager } from '@xldfinance/js-api';
 
 const configManager = getConfigManager();
 
@@ -113,7 +113,7 @@ Now, you're application will be using the production version of the SDK.
 To authenticate, on your server call the authenticate method passing your credentials.
 
 ```ts
-import { authenticate } from '@xld-js/api';
+import { authenticate } from '@xldfinance/js-api';
 
 async function main() {
   try {
