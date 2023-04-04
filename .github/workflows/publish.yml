@@ -19,16 +19,16 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - name: Install Dependencies
-        run: yarn
+        run: npm install
 
       - name: Validate types
-        run: yarn ts:validate
+        run: npm run ts:validate
 
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: yarn release
+          publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPMJS_TOKEN }}
